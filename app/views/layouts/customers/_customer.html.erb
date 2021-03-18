@@ -1,0 +1,28 @@
+<div class="column">
+  <div class="card">
+      <div class="card-content">
+        <p class="title">
+          <%= customer.name %>
+        </p>
+      </div>
+      <% if customer.image.present? %>
+        <div class="card-image">
+        <figure class="image">
+          <%= image_tag customer.image %>
+        </figure>
+      </div>
+    <% end %>
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        <%= if customer.email.present? %>
+          <strong>Email:</strong><br><%= customer.email %>
+        <% end %>
+      </p>
+      <p class="card-footer-item">
+        <%= if customer.phone.present? %>
+          <br><%= customer.phone %>
+        <% end %>
+      </p>
+    </footer>
+  </div>
+</div>
