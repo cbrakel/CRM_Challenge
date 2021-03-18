@@ -1,0 +1,7 @@
+<div class="columns">
+  <% @customers.each do | customer | %>
+    <%= render partial: 'customer',
+              object: customer,
+              locals: { show_link: false } %>
+  <% end %>
+</div>

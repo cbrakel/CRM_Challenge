@@ -14,14 +14,15 @@
     <% end %>
     <footer class="card-footer">
       <p class="card-footer-item">
-        <%= if customer.email.present? %>
-          <strong>Email:</strong><br><%= customer.email %>
-        <% end %>
+        <%# <%= if customer.email.present? %>
+          <strong>Email: </strong><%= customer.email %>
+        <%# <% end %>
+        <%# <%= if customer.phone.present? %>
+        <%# <% end %>
       </p>
       <p class="card-footer-item">
-        <%= if customer.phone.present? %>
-          <br><%= customer.phone %>
-        <% end %>
+          <%= customer.phone %>
+        <%# <% end %>
       </p>
     </footer>
   </div>
